@@ -88,12 +88,7 @@ function carregar(req, res, next, tombo) {
       tombo: tombo,
     },
   })
-    //na linha abaixo é utilizado Arrow Functions no lugar da função "anônima" (function (produto) { ... })
-    //para saber mais sobre Arrow function acesse:
-    //https://raphaelfabeni.com/es6-arrow-functions/
     .then((equipamento) => {
-      //armena o equipamento na requisição, para que a próxima função
-      //consiga recuperá-lo
       req.equipamento = equipamento;
       next();
     });
