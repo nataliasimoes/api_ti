@@ -16,7 +16,6 @@ const Tecnico = database.define('tecnico', {
        type: Sequelize.NUMBER,
        allowNull: false
     }
-    
 }, {
     tableName: 'tecnico'
   })

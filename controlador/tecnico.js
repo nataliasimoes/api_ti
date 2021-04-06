@@ -9,7 +9,7 @@ function listarTodos(req, res, next) {
 function cadastrar(req, res, next) {
   Tecnico.create({
     nome: req.body.nome,
-    telefone: req.body.telefone,
+    telefone: req.body.telefone
 
   })
     .then((tecnico) => {
@@ -36,7 +36,7 @@ function alterar(req, res) {
     const nome = req.body.nome || req.tecnico.nome;
     const telefone = req.body.telefone || req.tecnico.telefone;
     Tecnico.update(
-      { nome, telefone  },
+      { nome, telefone, formacao, foto  },
       {
         where: {
           id: req.tecnico.id
