@@ -46,7 +46,7 @@ function alterar(req, res) {
       { tombo, tipoEquipamento, marcaEquipamento, local, funciona  },
       {
         where: {
-          id: req.equipamento.id
+          tombo: req.equipamento.id
         },
       }
     ).then(() => {

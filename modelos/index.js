@@ -2,13 +2,15 @@ const Equipamento = require("./equipamento.js");
 const Ocorrencia = require("./ocorrencia.js");
 const Periferico = require("./periferico.js");
 const Tecnico = require("./tecnico.js");
+const Conserto = require("./conserto.js");
 
 
 const modelos = {
   Equipamento,
   Ocorrencia,
   Periferico,
-  Tecnico
+  Tecnico,
+  Conserto
 
 };
 
@@ -23,6 +25,7 @@ module.exports = {
   Equipamento,
   Ocorrencia,
   Periferico,
-  Tecnico
+  Tecnico,
+  Conserto
 
 }
